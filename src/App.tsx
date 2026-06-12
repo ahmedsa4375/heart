@@ -116,8 +116,8 @@ export default function App() {
               transition={{ delay: 3, duration: 1.5 }}
               className="z-20 text-center"
             >
-               <h2 className="text-[#FFB7C5] font-mono text-xl tracking-[0.3em] uppercase mb-2" style={{ textShadow: '0 0 12px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 183, 197, 0.3)' }}>
-                   I Love Mariam
+               <h2 className="text-[#FFB7C5] text-xl tracking-[0.2em] uppercase mb-2" style={{ fontFamily: '"Fira Code", monospace', textShadow: '0 0 12px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 183, 197, 0.3)' }}>
+              I Love Mariam
               </h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
               
