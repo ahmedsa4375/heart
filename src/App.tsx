@@ -116,7 +116,7 @@ export default function App() {
               transition={{ delay: 3, duration: 1.5 }}
               className="z-20 text-center"
             >
-              <h2 className=" text-[#FFB6C1] font-mono text-xl tracking-[0.3em] uppercase glow-text mb-2">
+               <h2 className="text-[#FFC0CB] font-mono text-xl tracking-[0.3em] uppercase mb-2" style={{ textShadow: '0 0 10px #FF69B4, 0 0 20px #FF1493, 0 0 30px #FF1493' }}>
                 i love mariam 
               </h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
