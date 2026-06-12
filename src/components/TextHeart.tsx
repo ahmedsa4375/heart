@@ -86,7 +86,8 @@ export default function TextHeart() {
         }
 
         ctx.fillStyle = `rgba(255, 77, 109, ${p.alpha})`;
-        ctx.fillText(text, p.x - ctx.measureText(text).width / 2, p.y);
+        const wave = Math.sin(elapsed * 0.003 + p.x * 0.05) * 3;
+ctx.fillText(text, p.x - ctx.measureText(text).width / 2, p.y + wave);
       });
 
       // إعادة تصفير الإضاءة حتى لا تؤثر على أي عناصر أخرى
