@@ -77,7 +77,7 @@ export default function TextHeart() {
       ctx.font = `${fontSize}px "Fira Code", monospace`;
       
       // كود الإضاءة والنيون للقلب بالكامل
-      ctx.shadowColor = "rgba(255, 77, 109, 0.9)";
+        ctx.shadowColor = "rgba(255, 255, 255, 0.9)";
       ctx.shadowBlur = 10;
       
       points.forEach(p => {
