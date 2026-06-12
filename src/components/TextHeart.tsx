@@ -91,7 +91,8 @@ export default function TextHeart() {
 
       // إعادة تصفير الإضاءة حتى لا تؤثر على أي عناصر أخرى
       ctx.shadowBlur = 0;
-
+ctx.shadowOffsetX = 0;
+ctx.shadowOffsetY = 0;
       animationFrameId = requestAnimationFrame(draw);
     };
 
