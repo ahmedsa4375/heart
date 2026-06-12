@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+ import React, { useEffect, useRef } from 'react';
 
 interface Point {
   x: number;
@@ -76,6 +76,10 @@ export default function TextHeart() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       ctx.font = `${fontSize}px "Fira Code", monospace`;
       
+      // كود الإضاءة والنيون للقلب بالكامل
+      ctx.shadowColor = "rgba(255, 77, 109, 0.9)";
+      ctx.shadowBlur = 10;
+      
       points.forEach(p => {
         if (elapsed > p.delay) {
             p.alpha += (p.targetAlpha - p.alpha) * 0.02;
@@ -84,6 +88,9 @@ export default function TextHeart() {
         ctx.fillStyle = `rgba(255, 77, 109, ${p.alpha})`;
         ctx.fillText(text, p.x - ctx.measureText(text).width / 2, p.y);
       });
+
+      // إعادة تصفير الإضاءة حتى لا تؤثر على أي عناصر أخرى
+      ctx.shadowBlur = 0;
 
       animationFrameId = requestAnimationFrame(draw);
     };
