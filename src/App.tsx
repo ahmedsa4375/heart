@@ -117,7 +117,7 @@ export default function App() {
               className="z-20 text-center"
             >
                <h2 className="text-[#FFB7C5] text-xl tracking-[0.2em] uppercase mb-2" style={{ fontFamily: '"Fira Code", monospace', textShadow: '0 0 12px rgba(255, 255, 255, 0.4), 0 0 4px rgba(255, 183, 197, 0.3)' }}>
-              I Love Mariam
+               Mariam
               </h2>
               <div className="w-12 h-px bg-pink-deep/30 mx-auto mb-8" />
               
